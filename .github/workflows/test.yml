@@ -12,6 +12,8 @@ jobs:
   make_website:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
+      
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
