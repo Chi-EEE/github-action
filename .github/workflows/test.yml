@@ -1,11 +1,13 @@
 name: 'Upload to GitHub Pages'
+
 on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
+
+permissions: 
+  contents: write
+
 jobs:
   make_website:
     runs-on: ubuntu-latest
